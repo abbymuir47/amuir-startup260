@@ -6,4 +6,7 @@
 - You can get the IP address for any domain name using the “dig” console function (one domain name can have multiple IP addresses in case the others don’t respond)
 - Owner of the root domain can make as many subdomains as he/she wants
 - “whois” console function gives you info about a domain/who owns it, etc
-- DNS = domain name system, address(A)= domain name→ IP vs canonical name records (CNAME)= domain name → other domain name  
+- DNS = domain name system, address(A)= domain name→ IP vs canonical name records (CNAME)= domain name → other domain name
+
+###Simon HTML
+used this command to deploy files: abbymuir@Abbys-Air-5 simon-html % ./deployFiles.sh -k /Users/abbymuir/Downloads/Inclass.pem -h abby-muir.click -s simon  
