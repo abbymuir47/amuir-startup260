@@ -29,3 +29,6 @@ Here is a diagram of how users will interact with the backend of the webpage:
 - **Authentication** - Enable username and password so that users can visit the site and save their data repeatedly.
 - **Database data** - Store user data such as login information, profile pictures, likes, comments, saves, and messages. Secure data storage for safe, repeated access.
 - **WebSocket** - Enables like count and comments to be displayed to all users. Like count and comments are updated for all users.
+
+## Startup HTML
+- 9/27, created and wrote html files for 4 different pages on my site: index, about, profile, and projects. Created an "images" folder in my files to store images I will display on my website. 
