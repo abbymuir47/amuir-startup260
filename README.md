@@ -40,3 +40,16 @@ I created and wrote html files for 5 different pages on my site: index, about, p
 - [x] **Images** - I have images on my about page, as well as on my projects page.
 - [x] **DB/Login** - Input box and submit button for login, found on home page. On the projects page, there is the ability for a user to like and comment. On the profile page, the user can access their like/comment history, as well as see and change their profile photo and username. On the chat page, users will be able to see their chat history.
 - [x] **WebSocket** - The like count and comment display will update in real time as different users contribute. Additionally, the chat feature will use websocket for real-time messaging.
+
+## CSS deliverable
+
+➡️ The following is an example of the required information for the `Startup CSS` deliverable
+
+For this deliverable I properly styled the application into its final appearance.
+
+- [x] **Header, footer, and main content body**
+- [x] **Navigation elements** - I dropped the underlines and changed the color for anchor elements.
+- [x] **Responsive to window resizing** - My app looks great on all window sizes and devices
+- [x] **Application elements** - Used good contrast and whitespace
+- [x] **Application text content** - Consistent fonts
+- [ ] **Application images** - Still don't have images and so no styling here. 😔
