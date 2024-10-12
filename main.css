@@ -1,0 +1,110 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-width: 375px;
+    font-family: Arial, sans-serif; /* Added a font family */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+header {
+    flex: 0 80px;
+    background-color: #f0f0f0; /* Light background color for header */
+    padding: 1em; /* Added padding for spacing */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Center items vertically */
+}
+
+h1 {
+    margin: 0; /* Remove default margin from h1 */
+    font-size: 2em; /* Adjust size */
+}
+
+nav menu {
+    display: flex;
+    justify-content: flex-end; /* Align menu items to the right */
+    padding: 0; /* Remove default padding */
+    list-style: none; /* Remove bullet points */
+}
+
+nav menu li {
+    margin: 0 15px; /* Spacing between items */
+}
+
+nav menu a {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Color for links */
+    font-weight: bold; /* Make links bold */
+}
+
+main {
+    flex: 1 calc(100vh - 110px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em; /* Added padding */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center forms */
+    margin: 1em 0; /* Spacing between forms */
+}
+
+form div {
+    margin: 0.5em 0; /* Spacing between inputs */
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 0.5em; /* Padding for inputs */
+    border: 1px solid #ccc; /* Border styling */
+    border-radius: 5px; /* Rounded corners */
+    width: 250px; /* Fixed width for inputs */
+}
+
+button {
+    padding: 0.5em 1em; /* Button padding */
+    margin: 0.5em; /* Spacing around buttons */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #007bff; /* Button color */
+    color: white; /* Button text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}
+
+footer {
+    flex: 0 30px;
+    background-color: #f0f0f0; /* Light background color for footer */
+    text-align: center; /* Center footer text */
+    padding: 1em; /* Added padding */
+}
+
+footer a {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+@media (max-height: 600px) {
+    header {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+    main {
+        flex: 1 100vh;
+    }
+}
