@@ -43,13 +43,11 @@ I created and wrote html files for 5 different pages on my site: index, about, p
 
 ## CSS deliverable
 
-➡️ The following is an example of the required information for the `Startup CSS` deliverable
+I used CSS here to style my website into what I want it to ultimately look like.
 
-For this deliverable I properly styled the application into its final appearance.
-
-- [x] **Header, footer, and main content body**
-- [x] **Navigation elements** - I dropped the underlines and changed the color for anchor elements.
-- [x] **Responsive to window resizing** - My app looks great on all window sizes and devices
-- [x] **Application elements** - Used good contrast and whitespace
-- [x] **Application text content** - Consistent fonts
-- [ ] **Application images** - Still don't have images and so no styling here. 😔
+- [x] **Header, footer, and main content body** - added css tags to style these different elements
+- [x] **Navigation elements** - justified my navigation menu to the right of the screen
+- [x] **Responsive to window resizing** - my app works on all sizes of screens
+- [x] **Application elements** - chose a color scheme for the app based on my icon/logo, and kept that theme consistent
+- [x] **Application text content** - updated font family and consistent font color throughout application
+- [x] **Application images** - added my images as flex elements as well so that they are styled correctly when the screen is resized
