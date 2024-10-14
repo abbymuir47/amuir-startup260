@@ -10,3 +10,5 @@
 
 ###Simon HTML
 used this command to deploy files: abbymuir@Abbys-Air-5 simon-html % ./deployFiles.sh -k /Users/abbymuir/Downloads/Inclass.pem -h abby-muir.click -s simon  
+
+./deployFiles.sh -k ~//production.pem -h yourdomain.click -s startup
