@@ -67,7 +67,7 @@ function debounce(delay, func) { let timeout; // To keep track of the timeout re
 The map() function creates a new array populated with the results of calling a provided function on every element in the calling array. ex) console.log(a.map(i => i + i));
 
 ## 9. What does the following code output using getElementByID and addEventListener?
-This code typically sets up an event listener on an element, which will execute a specified function when a specific event (like a click) occurs. getElementById gets an HTML element by its ID and returns it as a JavaScript object - ex) const element = document.getElementById('myElement');         addEventListener - element.addEventListener('click', function() { console.log('Element was clicked!'); });
+`This code typically sets up an event listener on an element, which will execute a specified function when a specific event (like a click) occurs. getElementById gets an HTML element by its ID and returns it as a JavaScript object - ex) const element = document.getElementById('myElement');         addEventListener - element.addEventListener('click', function() { console.log('Element was clicked!'); });`
 
 ## 10. What does the following line of Javascript do using a # selector?
 A # selector typically selects an element by its ID. commonly used w. querySelector() - returns the element as an object if it exists, or if it doesn’t, returns null. Also getElementById(). For example, const element = document.querySelector('#myElement');
@@ -82,33 +82,33 @@ Inline. (not a new line, only takes up as much width as necessary)
 div {background-color: red;}
 
 ## 14. How would you display an image with a hyperlink in HTML?
-<a href="url"><img src="image.jpg" alt="Description"></a>
+`<a href="url"><img src="image.jpg" alt="Description"></a>`
 
 ## 15. In the CSS box model, what is the ordering of the box layers starting at the inside and working out?
 Content → Padding → Border → Margin.
 
 ## 16. Given the following HTML, what CSS would you use to set the text "trouble" to green and leave the "double" text unaffected?
-You can use a class or ID to target "trouble" specifically. For example: <p>This is a <span class="green-text">trouble</span> with double.</p> THEN .green-text {color: green;} OR .trouble {color: green;}
+You can use a class or ID to target "trouble" specifically. For example: `<p>This is a <span class="green-text">trouble</span> with double.</p> THEN .green-text {color: green;} OR .trouble {color: green;}`
 
 ## 17. What will the following code output when executed using a for loop and console.log?
 
 ## 18. How would you use JavaScript to select an element with the id of “byu” and change the text color of that element to green?
-document.getElementById("byu")  → if(element){element.style.color = "green";}
+`document.getElementById("byu")  → if(element){element.style.color = "green";}`
 
 ## 19. What is the opening HTML tag for a paragraph, ordered list, unordered list, second level heading, first level heading, third level heading?
-Paragraph: <p> Ordered List: <ol> Unordered List: <ul> Second Level Heading: <h2> First Level Heading: <h1> Third Level Heading: <h3>
+Paragraph: `<p> Ordered List: <ol> Unordered List: <ul> Second Level Heading: <h2> First Level Heading: <h1> Third Level Heading: <h3>`
 
 ## 20. How do you declare the document type to be HTML?
-<!DOCTYPE html>
+`<!DOCTYPE html>`
 
 ## 21. What is valid JavaScript syntax for if, else, for, while, switch statements?
-If statement: if (condition) { /* code */ } else { /* code */ }
+`If statement: if (condition) { /* code */ } else { /* code */ }
 For loop: for (let i = 0; i < 10; i++) { /* code */ }
 While loop: while (condition) { /* code */ }
-Switch statement:switch (expression) {case value1: break; case value2: break; default:}?
+Switch statement:switch (expression) {case value1: break; case value2: break; default:}?`
 
 ## 22. What is the correct syntax for creating a JavaScript object?
-const obj = new Object({ a: 3 }); obj['b'] = 'fish'; obj.c = [1, 2, 3];
+`const obj = new Object({ a: 3 }); obj['b'] = 'fish'; obj.c = [1, 2, 3];`
 
 ## 23. Is it possible to add new properties to JavaScript objects?
 Yes, you can add new properties dynamically.
@@ -117,7 +117,7 @@ Yes, you can add new properties dynamically.
 `<script> `
 
 ## 25. Given the following HTML, what JavaScript could you use to set the text "animal" to "crow" and leave the "fish" text unaffected?
-const element = document.getElementById("text"); // Replace the text "animal" with "crow" if (element) { element.textContent = element.textContent.replace("animal", "crow"); }
+`const element = document.getElementById("text"); // Replace the text "animal" with "crow" if (element) { element.textContent = element.textContent.replace("animal", "crow"); }`
 
 ## 26. Which of the following correctly describes JSON?
 JSON (JavaScript Object Notation) is a lightweight data interchange format that is easy for humans to read and write and easy for machines to parse and generate. Easily convertible to and from JavaScript objects, usually an object of key-value pairs
