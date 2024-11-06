@@ -51,3 +51,18 @@ I used CSS here to style my website into what I want it to ultimately look like.
 - [x] **Application elements** - chose a color scheme for the app based on my icon/logo, and kept that theme consistent
 - [x] **Application text content** - updated font family and consistent font color throughout application
 - [x] **Application images** - added my images as flex elements as well so that they are styled correctly when the screen is resized
+
+## React deliverable
+
+➡️ The following is an example of the required information for the `Startup React` deliverable
+
+For this deliverable I used JavaScript and React so that the application completely works for a single user. I also added placeholders for future technology.
+
+- [x] **Bundled and transpiled** - done!
+- [x] **Components** - Login, voting list, vote are all components with mocks for login, WebSocket.
+  - [x] **login** - When you press enter or the login button it takes you to the voting page.
+  - [x] **database** - Displayed the voting counts. Currently this is stored and retrieved from local storage, but it will be replaced with the database data later.
+  - [x] **WebSocket** - I used the setInterval function to periodically increase a random vote count. This will be replaced with WebSocket messages later.
+  - [x] **application logic** - The highlight and ranking number change based up the user's selections.
+- [x] **Router** - Routing between login and voting components.
+- [x] **Hooks** - Vue uses class properties instead of `UseState` to track changes in vote state.
