@@ -2,6 +2,12 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './app.css';
 
+import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
+import { About } from './about/about';
+import { Profile } from './profile/profile';
+import { Projects } from './projects/projects';
+import { Chat } from './chat/chat';
+
 export default function App() {
   return (
     <><header>
