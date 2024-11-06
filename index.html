@@ -1,58 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Abby Muir</title>
-    <link rel="icon" href="flower_icon.ico" />
-    <link rel="stylesheet" href="main.css" />
-</head>
-<body>
-    <header>
-        <h1>Abby Muir<sup>&reg;</sup></h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="profile.html">User Profile</a></li>
-            </ul>
-        </nav>
-    </header>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/flower_icon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
 
-    <main>
-        <div id="picture" class="picture-box">
-            <img src="images/collage_ss.png" alt="random" />
-        </div>
-        <div class="login">
-            <form method="get" action="profile.html">
-                <div>
-                    <label for="email">Email:</label>
-                    <span>@</span>
-                    <input type="text" id="email" placeholder="your@email.com" />
-                </div>
-                <div>
-                    <label for="password">Password:</label>
-                    <span>🔒</span>
-                    <input type="password" id="password" placeholder="password" />
-                </div>
-                <button type="submit">Login</button>
-                <button type="button">Create</button>
-            </form>
-        </div>
-        <div class="chat">
-            <h3>Chat with me!</h3>
-            <form method="get" action="chat.html">
-                <button type="submit">Chat Now</button>
-            </form>
-        </div>
-    </main>
-
-    <footer>
-        <hr />
-        <span class="text-reset">Abby Muir</span>
-        <br />
-        <a href="https://github.com/abbymuir47/amuir-startup260">GitHub</a>
-    </footer>
-</body>
+    <title>Startup React</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/index.jsx"></script>
+  </body>
 </html>
