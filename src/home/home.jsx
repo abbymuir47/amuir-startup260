@@ -7,6 +7,7 @@ export function Home() {
         <div id="picture" class="picture-box">
             <img src="images/collage_ss.png" alt="random" />
         </div>
+        {/*
         <div class="login">
             <form method="get" action="profile.html">
                 <div>
@@ -23,6 +24,7 @@ export function Home() {
                 <button type="button">Create</button>
             </form>
         </div>
+        */}
         <div class="chat">
             <h3>Chat with me!</h3>
             <form method="get" action="chat.html">

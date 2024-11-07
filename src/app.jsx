@@ -18,8 +18,15 @@ export default function App() {
                     <li><NavLink className='nav-link' to='home'>Home</NavLink></li>
                     <li><NavLink className='nav-link' to='about'>About</NavLink></li>
                     <li><NavLink className='nav-link' to='projects'>Projects</NavLink></li>
-                    <li><NavLink className='nav-link' to='profile'>User Profile</NavLink></li>
+                    {authState === AuthState.Authenticated && (
+                        <li className='nav-item'>
+                        <NavLink className='nav-link' to='profile'>
+                            User Profile
+                        </NavLink>
+                        </li>
+                    )}
                 </ul>
+                
             </nav>
         </header>
         <Routes>
@@ -27,8 +34,21 @@ export default function App() {
             <Route path='/home' element={<Home />} />
             <Route path='/about' element={<About />} />
             <Route path='/projects' element={<Projects />} />
-            <Route path='/profile' element={<Profile />} />
             <Route path='*' element={<NotFound />} />
+            <Route
+                path='/profile'
+                element={
+                <Profile
+                    userName={userName}
+                    authState={authState}
+                    onAuthChange={(userName, authState) => {
+                    setAuthState(authState);
+                    setUserName(userName);
+                    }}
+                />
+                }
+                exact
+            />
         </Routes>
         <footer>
             <hr />
