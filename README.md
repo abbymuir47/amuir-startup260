@@ -54,15 +54,13 @@ I used CSS here to style my website into what I want it to ultimately look like.
 
 ## React deliverable
 
-➡️ The following is an example of the required information for the `Startup React` deliverable
+Here I used JavaScript and React so that now, the application works with a single webpage for a single user. I also added placeholders for future technology.
 
-For this deliverable I used JavaScript and React so that the application completely works for a single user. I also added placeholders for future technology.
-
-- [x] **Bundled and transpiled** - done!
-- [x] **Components** - Login, voting list, vote are all components with mocks for login, WebSocket.
-  - [x] **login** - When you press enter or the login button it takes you to the voting page.
-  - [x] **database** - Displayed the voting counts. Currently this is stored and retrieved from local storage, but it will be replaced with the database data later.
-  - [x] **WebSocket** - I used the setInterval function to periodically increase a random vote count. This will be replaced with WebSocket messages later.
-  - [x] **application logic** - The highlight and ranking number change based up the user's selections.
-- [x] **Router** - Routing between login and voting components.
-- [x] **Hooks** - Vue uses class properties instead of `UseState` to track changes in vote state.
+- [x] **Bundled and transpiled using vite** - done!
+- [x] **Components** - Home, about, profile, and projects are all components with mocks for profile login, WebSocket.
+  - [x] **login/profile** - profile page will let a user login and use database authentication.
+  - [x] **database** - displays quote from a 3rd party service on the about page, will also use a database later to authenticate users.
+  - [x] **WebSocket** - like count and comments will be displayed on the projects page later using WebSocket.
+  - [x] **application logic** - previous comments and chats will change based on current logged in user profile
+- [x] **Router** - Router in the app.jsx file to route between home, about, profile, and project pages
+- [x] **Hooks** - Created index.jsx to hook the index.html into the main App Component
