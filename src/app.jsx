@@ -5,9 +5,9 @@ import './app.css';
 import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
 import { Home } from './home/home';
 import { About } from './about/about';
-import { Profile } from './profile/profile';
+import { Profile } from './login/login';
 import { Projects } from './projects/projects';
-//import { AuthState } from './profile/authState';
+//import { AuthState } from './login/authState';
 
 export default function App() {
   return (
@@ -19,10 +19,10 @@ export default function App() {
                     <li><NavLink className='nav-link' to='home'>Home</NavLink></li>
                     <li><NavLink className='nav-link' to='about'>About</NavLink></li>
                     <li><NavLink className='nav-link' to='projects'>Projects</NavLink></li>
-                    <li><NavLink className='nav-link' to='profile'>User Profile</NavLink></li>
+                    <li><NavLink className='nav-link' to='login'>User Profile</NavLink></li>
                     {/* {authState === AuthState.Authenticated && (
                         <li className='nav-item'>
-                        <NavLink className='nav-link' to='profile'>
+                        <NavLink className='nav-link' to='login'>
                             User Profile
                         </NavLink>
                         </li>
@@ -36,10 +36,10 @@ export default function App() {
             <Route path='/home' element={<Home />} />
             <Route path='/about' element={<About />} />
             <Route path='/projects' element={<Projects />} />
-            <Route path='/profile' element={<Profile />} />
+            <Route path='/login' element={<Profile />} />
             <Route path='*' element={<NotFound />} />
             {/* <Route
-                path='/profile'
+                path='/login'
                 element={
                 <Profile
                     userName={userName}

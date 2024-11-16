@@ -1,5 +1,5 @@
 import React from 'react';
-import './profile.css';
+import './login.css';
 
 export function Login({ userName, authState, onAuthChange }) {
   return (
