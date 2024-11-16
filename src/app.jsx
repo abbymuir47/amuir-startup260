@@ -7,6 +7,7 @@ import { Home } from './home/home';
 import { About } from './about/about';
 import { Profile } from './profile/profile';
 import { Projects } from './projects/projects';
+//import { AuthState } from './profile/authState';
 
 export default function App() {
   return (
@@ -18,13 +19,14 @@ export default function App() {
                     <li><NavLink className='nav-link' to='home'>Home</NavLink></li>
                     <li><NavLink className='nav-link' to='about'>About</NavLink></li>
                     <li><NavLink className='nav-link' to='projects'>Projects</NavLink></li>
-                    {authState === AuthState.Authenticated && (
+                    <li><NavLink className='nav-link' to='profile'>User Profile</NavLink></li>
+                    {/* {authState === AuthState.Authenticated && (
                         <li className='nav-item'>
                         <NavLink className='nav-link' to='profile'>
                             User Profile
                         </NavLink>
                         </li>
-                    )}
+                    )} */}
                 </ul>
                 
             </nav>
@@ -34,8 +36,9 @@ export default function App() {
             <Route path='/home' element={<Home />} />
             <Route path='/about' element={<About />} />
             <Route path='/projects' element={<Projects />} />
+            <Route path='/profile' element={<Profile />} />
             <Route path='*' element={<NotFound />} />
-            <Route
+            {/* <Route
                 path='/profile'
                 element={
                 <Profile
@@ -48,11 +51,11 @@ export default function App() {
                 />
                 }
                 exact
-            />
+            /> */}
         </Routes>
         <footer>
             <hr />
-            <span class="text-reset">Abby Muir</span>
+            <span className="text-reset">Abby Muir</span>
             <br />
             <a href="https://github.com/abbymuir47/amuir-startup260">GitHub</a>
         </footer>

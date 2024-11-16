@@ -9,11 +9,18 @@ export function About(props) {
     const [quoteAuthor, setQuoteAuthor] = React.useState('unknown');
     
     React.useEffect(() => {
+        //fetch('/api/scores')
         setProfileUrl(`/images/profile.jpg`);
         setSurfingUrl(`/images/surfing.jpg`);
         setSkiingUrl(`/images/skiing.jpg`);
-        setQuote('Random quote');
-        setQuoteAuthor('-3rd party database');
+
+        fetch('https://quote.cs260.click')
+        .then((response) => response.json())
+        .then((data) => {
+          setQuote(data.quote);
+          setQuoteAuthor(data.author);
+        })
+        .catch();
     }, []);
 
   return (
