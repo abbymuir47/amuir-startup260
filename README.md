@@ -64,3 +64,13 @@ Here I used JavaScript and React so that now, the application works with a singl
   - [x] **application logic** - previous comments and chats will change based on current logged in user profile
 - [x] **Router** - Router in the app.jsx file to route between home, about, profile, and project pages
 - [x] **Hooks** - Created index.jsx to hook the index.html into the main App Component
+
+## Service deliverable
+
+I added backend endpoints for this deliverable that get quotes from a 3rd party database.
+
+- [x] **Node.js/Express HTTP service** - done!
+- [x] **Static middleware for frontend** - done!
+- [ ] **Calls to third party endpoints** - done! Random quotes get displayed on my about page
+- [x] **Backend service endpoints** - placeholders for login that will store user info/authentication
+- [x] **Frontend calls service endpoints** - used the fetch function to call service endpoints, as in the about.jsx file

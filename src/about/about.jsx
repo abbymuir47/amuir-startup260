@@ -9,7 +9,7 @@ export function About(props) {
     const [quoteAuthor, setQuoteAuthor] = React.useState('unknown');
     
     React.useEffect(() => {
-        //fetch('/api/scores')
+        //fetch('/api/about')
         setProfileUrl(`/images/profile.jpg`);
         setSurfingUrl(`/images/surfing.jpg`);
         setSkiingUrl(`/images/skiing.jpg`);
