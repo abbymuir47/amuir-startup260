@@ -26,22 +26,22 @@ export function Login({ userName, authState, onAuthChange }) {
   );
 }
 
-export function Profile() {
-  return (
-    <main>
-      <h1>Login</h1>
-      <form method="get" action="about.html">
-        <div>
-          <span>@</span>
-          <input type="text" placeholder="your@email.com" />
-        </div>
-        <div>
-          <span>🔒</span>
-          <input type="password" placeholder="password" />
-        </div>
-        <button type="submit">Login</button>
-        <button type="submit">Create</button>
-      </form>
-    </main>
-  );
-}
+// export function Profile() {
+//   return (
+//     <main>
+//       <h1>Login</h1>
+//       <form method="get" action="about.html">
+//         <div>
+//           <span>@</span>
+//           <input type="text" placeholder="your@email.com" />
+//         </div>
+//         <div>
+//           <span>🔒</span>
+//           <input type="password" placeholder="password" />
+//         </div>
+//         <button type="submit">Login</button>
+//         <button type="submit">Create</button>
+//       </form>
+//     </main>
+//   );
+// }

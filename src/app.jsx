@@ -5,7 +5,7 @@ import './app.css';
 import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
 import { Home } from './home/home';
 import { About } from './about/about';
-import { Profile } from './login/login';
+import { Login } from './login/login';
 import { Projects } from './projects/projects';
 import { Chat } from './chat/chat';
 //import { AuthState } from './login/authState';
@@ -20,7 +20,7 @@ export default function App() {
                     <li><NavLink className='nav-link' to='home'>Home</NavLink></li>
                     <li><NavLink className='nav-link' to='about'>About</NavLink></li>
                     <li><NavLink className='nav-link' to='projects'>Projects</NavLink></li>
-                    <li><NavLink className='nav-link' to='login'>User Profile</NavLink></li>
+                    <li><NavLink className='nav-link' to='login'>Login</NavLink></li>
                     {authState === AuthState.Authenticated && (
                         <li className='nav-item'>
                         <NavLink className='nav-link' to='chat'>
