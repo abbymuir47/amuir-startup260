@@ -8,9 +8,13 @@ import { About } from './about/about';
 import { Login } from './login/login';
 import { Projects } from './projects/projects';
 import { Chat } from './chat/chat';
-//import { AuthState } from './login/authState';
+import { AuthState } from './login/authState';
 
 export default function App() {
+    const [userName, setUserName] = React.useState(localStorage.getItem('userName') || '');
+    const currentAuthState = userName ? AuthState.Authenticated : AuthState.Unauthenticated;
+    const [authState, setAuthState] = React.useState(currentAuthState);
+
   return (
     <BrowserRouter>
         <header>
