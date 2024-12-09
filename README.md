@@ -74,3 +74,27 @@ I added backend endpoints for this deliverable that get quotes from a 3rd party 
 - [ ] **Calls to third party endpoints** - done! Random quotes get displayed on my about page
 - [x] **Backend service endpoints** - placeholders for login that will store user info/authentication
 - [x] **Frontend calls service endpoints** - used the fetch function to call service endpoints, as in the about.jsx file
+
+## DB/Login deliverable
+
+➡️ The following is an example of the required information for the `Startup DB/Login` deliverable
+
+For this deliverable I associate the votes with the logged in user. I stored the votes in the database.
+
+- [x] **MongoDB Atlas database created** - done!
+- [x] **Stores data in MongoDB** - done!
+- [x] **User registration** - Creates a new account in the database.
+- [x] **existing user** - Stores the chats under the same user if the user already exists.
+- [x] **Use MongoDB to store credentials** - Stores user credentials.
+- [x] **Restricts functionality** - You cannot chat with other users until you have logged in.
+
+## WebSocket deliverable
+
+➡️ The following is an example of the required information for the `Startup WebSocket` deliverable
+
+For this deliverable I used webSocket to update the votes on the frontend in realtime.
+
+- [x] **Backend listens for WebSocket connection** - done!
+- [x] **Frontend makes WebSocket connection** - done!
+- [x] **Data sent over WebSocket connection** - done!
+- [x] **WebSocket data displayed** - All user votes display in realtime. I'm really proud that this is working. Way cool!
