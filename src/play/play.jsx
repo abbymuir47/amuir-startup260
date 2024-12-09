@@ -5,7 +5,7 @@ import { SimonGame } from './simonGame';
 
 export function Play(props) {
   return (
-    <main className='bg-secondary'>
+    <main>
       <Players userName={props.userName} />
       <SimonGame userName={props.userName} />
     </main>

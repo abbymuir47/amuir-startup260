@@ -1,8 +1,6 @@
 import React from 'react';
 
 import { Button } from 'react-bootstrap';
-import { SimonButton } from './simonButton';
-import { delay } from './delay';
 import { GameEvent, GameNotifier } from './gameNotifier';
 import './simonGame.css';
 
@@ -16,11 +14,15 @@ export function SimonGame(props) {
   async function reset() {
     setAllowPlayer(false);
     setPlaybackPos(0);
-    await buttonDance(1);
     increaseSequence([]);
 
     // Let other players know a new game has started
     GameNotifier.broadcastEvent(userName, GameEvent.Start, {});
+  }
+
+  function increaseSequence(previousSequence) {
+    const newSequence = [...previousSequence];
+    setSequence(newSequence);
   }
 
   async function saveScore(score) {
@@ -38,10 +40,7 @@ export function SimonGame(props) {
   }
 
   return (
-    <div className='game'>
-      <div className='button-container'>
-        <>{buttonArray}</>
-        <div className='controls center'>
+<div className='controls center'>
           <div className='game-name'>
             Simon<sup>&reg;</sup>
           </div>
@@ -50,7 +49,5 @@ export function SimonGame(props) {
             Reset
           </Button>
         </div>
-      </div>
-    </div>
   );
 }
