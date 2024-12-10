@@ -3,7 +3,7 @@ import React from 'react';
 import { GameEvent, GameNotifier } from './gameNotifier';
 import './players.css';
 
-export function Players(props) {
+export function Users(props) {
   const userName = props.userName;
 
   const [events, setEvent] = React.useState([]);
@@ -34,7 +34,7 @@ export function Players(props) {
 
       messageArray.push(
         <div key={i} className='event'>
-          <span className={'player-event'}>{event.from.split('@')[0]}</span>
+          <span className={'user-event'}>{event.from.split('@')[0]}</span>
           {message}
         </div>
       );
@@ -43,10 +43,10 @@ export function Players(props) {
   }
 
   return (
-    <div className='players'>
-      Player
-      <span className='player-name'>{userName}</span>
-      <div id='player-messages'>{createMessageArray()}</div>
+    <div className='users text-align-left'>
+      User&nbsp;
+      <span className='user-name'>{userName}</span>
+      <div id='user-messages'>{createMessageArray()}</div>
     </div>
   );
 }

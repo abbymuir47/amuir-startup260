@@ -7,16 +7,17 @@ import './simonGame.css';
 export function SimonGame(props) {
   const userName = props.userName;
   
-  const [allowPlayer, setAllowPlayer] = React.useState(false);
+  const [allowUser, setAllowUser] = React.useState(false);
   const [sequence, setSequence] = React.useState([]);
   const [playbackPos, setPlaybackPos] = React.useState(0);
 
-  async function reset() {
-    setAllowPlayer(false);
+  async function comment() {
+    console.log("comment button clicked")
+    setAllowUser(false);
     setPlaybackPos(0);
     increaseSequence([]);
 
-    // Let other players know a new game has started
+    // Let other Users know a new game has started
     GameNotifier.broadcastEvent(userName, GameEvent.Start, {});
   }
 
@@ -35,19 +36,15 @@ export function SimonGame(props) {
       body: JSON.stringify(newScore),
     });
 
-    // Let other players know the game has concluded
+    // Let other Users know the game has concluded
     GameNotifier.broadcastEvent(userName, GameEvent.End, newScore);
   }
 
   return (
-<div className='controls center'>
-          <div className='game-name'>
-            Simon<sup>&reg;</sup>
-          </div>
-          <div className='score center'>{sequence.length === 0 ? '--' : sequence.length - 1}</div>
-          <Button variant='primary' onClick={() => reset()}>
-            Reset
-          </Button>
-        </div>
+<div className='controls-center'>
+  <Button variant='primary' onClick={() => comment()}>
+    Comment
+  </Button>
+</div>
   );
 }

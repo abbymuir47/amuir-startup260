@@ -1,12 +1,12 @@
 import React from 'react';
 
-import { Players } from './players';
+import { Users } from './users';
 import { SimonGame } from './simonGame';
 
 export function Play(props) {
   return (
     <main>
-      <Players userName={props.userName} />
+      <Users userName={props.userName} />
       <SimonGame userName={props.userName} />
     </main>
   );
