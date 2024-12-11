@@ -14,7 +14,7 @@ export function Users(props) {
     return () => {
       GameNotifier.removeHandler(handleGameEvent);
     };
-  });
+  }, [events]);
 
   function handleGameEvent(event) {
     setEvent([...events, event]);
@@ -27,7 +27,7 @@ export function Users(props) {
       if (event.type === GameEvent.End) {
         message = `scored ${event.value.score}`;
       } else if (event.type === GameEvent.Start) {
-        message = `started a new game`;
+        message = ` entered the chat`;
       } else if (event.type === GameEvent.System) {
         message = event.value.msg;
       }
@@ -43,10 +43,13 @@ export function Users(props) {
   }
 
   return (
+    <>
+    <h2>Welcome to the chat room</h2>
     <div className='users text-align-left'>
       User&nbsp;
       <span className='user-name'>{userName}</span>
       <div id='user-messages'>{createMessageArray()}</div>
     </div>
+    </>
   );
 }

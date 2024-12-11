@@ -9,7 +9,6 @@ import { Login } from './login/login';
 import { Projects } from './projects/projects';
 import { Chat } from './chat/chat';
 import { Play } from './play/play';
-import { ChatBox } from './myChat/chatBox';
 import { AuthState } from './login/authState';
 
 export default function App() {
@@ -41,13 +40,6 @@ export default function App() {
                         </NavLink>
                         </li>
                     )}
-                    {authState === AuthState.Authenticated && (
-                        <li className='nav-item'>
-                        <NavLink className='nav-link' to='chatBox'>
-                            New Chat
-                        </NavLink>
-                        </li>
-                    )}
                 </ul>
                 
             </nav>
@@ -73,7 +65,6 @@ export default function App() {
             <Route path='/projects' element={<Projects />} />
             <Route path='/chat' element={<Chat userName={userName} />} />
             <Route path='/play' element={<Play userName={userName} />} />
-            <Route path='/chatBox' element={<ChatBox userName={userName} />} />
             <Route path='*' element={<NotFound />} />
         </Routes>
         <footer>
