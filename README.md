@@ -71,7 +71,7 @@ I added backend endpoints for this deliverable that get quotes from a 3rd party 
 
 - [x] **Node.js/Express HTTP service** - done!
 - [x] **Static middleware for frontend** - done!
-- [ ] **Calls to third party endpoints** - done! Random quotes get displayed on my about page
+- [x] **Calls to third party endpoints** - done! Random quotes get displayed on my about page
 - [x] **Backend service endpoints** - placeholders for login that will store user info/authentication
 - [x] **Frontend calls service endpoints** - used the fetch function to call service endpoints, as in the about.jsx file
 
