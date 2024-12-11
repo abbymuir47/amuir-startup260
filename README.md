@@ -77,24 +77,20 @@ I added backend endpoints for this deliverable that get quotes from a 3rd party 
 
 ## DB/Login deliverable
 
-➡️ The following is an example of the required information for the `Startup DB/Login` deliverable
-
-For this deliverable I associate the votes with the logged in user. I stored the votes in the database.
+For this deliverable I associate chats with the logged in user. I stored the user credentials in the database.
 
 - [x] **MongoDB Atlas database created** - done!
 - [x] **Stores data in MongoDB** - done!
 - [x] **User registration** - Creates a new account in the database.
-- [x] **existing user** - Stores the chats under the same user if the user already exists.
+- [x] **existing user** - Stores information for existing users
 - [x] **Use MongoDB to store credentials** - Stores user credentials.
-- [x] **Restricts functionality** - You cannot chat with other users until you have logged in.
+- [x] **Restricts functionality** - You cannot enter the chat room with other users until you have logged in.
 
 ## WebSocket deliverable
 
-➡️ The following is an example of the required information for the `Startup WebSocket` deliverable
-
-For this deliverable I used webSocket to update the votes on the frontend in realtime.
+For this deliverable I used webSocket to create a realtime chatroom between users. One user can see when another user enters the chatroom in real time - when one person clicks "comment", the phrase "(username) has entered the chat" is displayed for other users.
 
 - [x] **Backend listens for WebSocket connection** - done!
 - [x] **Frontend makes WebSocket connection** - done!
 - [x] **Data sent over WebSocket connection** - done!
-- [x] **WebSocket data displayed** - All user votes display in realtime. I'm really proud that this is working. Way cool!
+- [x] **WebSocket data displayed** - Usernames displayed to all when someone enters the chat room and clicks "comment"
